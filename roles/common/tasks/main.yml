@@ -1,3 +1,18 @@
 ---
 - include: essentials.yml
 
+# sublime text 3
+- name: See if SublimeText is installed
+  command: find /usr/bin -name 'subl'
+  register: sublime_installed
+- include: sublime.yml
+  when: (not sublime_installed.stdout)
+
+#dropbox
+- name: See if dropbox is installed
+  command: find /usr/bin/ -name 'dropbox'
+  register: dropbox_installed
+- include: dropbox.yml
+  when: (not dropbox_installed.stdout)
+
+- include: oh_my_zsh.yml

@@ -3,8 +3,10 @@
     apt: pkg={{ item }} state=installed
     with_items:
       - vim
-      - git
       - build-essential
+      - git
+      - wget
+      - zsh
       - unzip
       - curl
       - sqlite3 
