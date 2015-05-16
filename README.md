@@ -3,7 +3,7 @@ My Desktop/Laptop Provisioning
 
 Ansible provisioning to manage my personal Ubuntu desktop.
 
-Role list
+Roles list
 --------------
 
 - Common (Essentials packages like vim, git etc)
