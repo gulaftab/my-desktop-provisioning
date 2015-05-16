@@ -1,0 +1,11 @@
+---
+  - name: install default packages
+    apt: pkg={{ item }} state=installed
+    with_items:
+      - vim
+      - git
+      - build-essential
+      - unzip
+      - curl
+      - sqlite3 
+      - libsqlite3-dev

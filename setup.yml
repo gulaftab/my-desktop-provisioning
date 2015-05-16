@@ -1,0 +1,8 @@
+- name: setup my local machine with my basic customizations
+  hosts: local
+  user: ahmedga
+  sudo: yes
+  connection: local
+  roles:
+    - common
+    - latex
